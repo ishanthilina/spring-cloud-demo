@@ -5,11 +5,13 @@ import info.ishans.spring.reservationservice.reservations.ReservationRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 
 import java.util.stream.Stream;
 
 @SpringBootApplication
+@EnableDiscoveryClient
 public class ReservationServiceApplication {
 
 	@Bean
